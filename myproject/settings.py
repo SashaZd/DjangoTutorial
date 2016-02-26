@@ -13,7 +13,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -117,13 +119,11 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['*']
 
 # Static asset configuration
-import os
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# STATIC_ROOT = 'staticfiles'
-# STATIC_URL = '/static/'
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = (
-# 	os.path.join(BASE_DIR, 'static'),
-# )
+STATICFILES_DIRS = (
+	os.path.join(BASE_DIR, 'static'),
+)
 
 
