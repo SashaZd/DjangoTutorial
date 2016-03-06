@@ -24,9 +24,9 @@ def createUser(request):
 
 	print first_name, last_name, email
 	print len(existing_users)
-	if len(existing_users) > 1:
+	if len(existing_users) > 0:
 		# User Exists!
-		existing_user = existing_users[0]
+		user = existing_users[0]
 		errorMessage = "Error! User with this email already exists."
 
 		return HttpResponse(json.dumps({'success': False, "error":errorMessage}), content_type="application/json")

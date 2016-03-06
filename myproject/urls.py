@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^api/user/$', UserManager.userRequest),  
-    url(r'^api/user/(?P<user_id>\d*)/$', UserManager.userRequest),   
+    url(r'^api/user/(?P<user_id>\d*)/$', UserManager.userRequest)
+     
 ]
