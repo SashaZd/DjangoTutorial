@@ -8,4 +8,4 @@ PDF Format (recommended): https://github.com/SashaZd/DjangoTutorial/blob/master/
 
 Google Slides: https://docs.google.com/presentation/d/1ijDygnGmiCDn3IkbyAsON6zSKZW8R8gnkaujXsW78Ns/edit?usp=sharing
 
-@author: Sasha Azad | sasha.azad[at]gatech.edu 
+@author: Sasha Azad
